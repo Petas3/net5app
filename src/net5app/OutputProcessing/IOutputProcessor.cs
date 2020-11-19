@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace net5app.OutputProcessing
+﻿namespace net5app
 {
-    interface IOutputProcessor
+    internal interface IOutputProcessor
     {
+        void Process(DataStruct data);
     }
 }

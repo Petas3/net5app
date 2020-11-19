@@ -3,17 +3,17 @@
 namespace net5app
 {
     [DataContract]
-    public class DataSubject
+    public class DataMetric
     {
         [DataMember]
         public string Name;
         [DataMember]
-        public double Weight;
+        public double Value;
 
-        public DataSubject(string Name, double Weight)
+        public DataMetric(string Name, double Value)
         {
             this.Name = Name;
-            this.Weight = Weight;
+            this.Value = Value;
         }
     }
 }

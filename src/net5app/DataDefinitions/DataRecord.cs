@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 
-namespace net5app.DataDefinitions
+namespace net5app
 {
-    class DataRecord
+    [DataContract]
+    public class DataRecord
     {
+        [DataMember]
+        public string Name;
+        [DataMember]
+        public byte[] SubjectValues;
+        [DataMember]
+        public byte[] MetricValues;
     }
 }

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "net5app": {
+      "commandName": "Project",
+      "commandLineArgs": "\"examination.txt\""
+    }
+  }
+}

@@ -1,0 +1,13 @@
+[*.cs]
+
+# IDE0005: Using directive is unnecessary.
+dotnet_diagnostic.IDE0005.severity = suggestion
+
+# Force modifiers
+dotnet_style_require_accessibility_modifiers = always:error
+
+# CS1030: #warning directive is a warning
+dotnet_diagnostic.CS1030.severity = warning
+
+# IDE0059: Suppresion removal notice is a warning
+dotnet_diagnostic.IDE0059.severity = warning

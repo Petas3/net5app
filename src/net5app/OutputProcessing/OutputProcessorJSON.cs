@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.IO;
+using System.Runtime.Serialization.Json;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace net5app.OutputProcessing
+namespace net5app
 {
-    class OutputProcessorJson
+    internal class OutputProcessorJson : IOutputProcessor
     {
+        private readonly string path;
+
+        internal OutputProcessorJson(string path)
+        {
+            this.path = path;
+        }
+
+        public void Process(DataStruct data)
+        {
+            DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(DataStruct));
+            using StreamWriter sw = new StreamWriter(path, false, new UTF8Encoding(false));
+            ser.WriteObject(sw.BaseStream, data);
+        }
     }
 }

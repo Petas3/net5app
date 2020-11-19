@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.IO;
 using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
 
-namespace net5app.OutputProcessing
+namespace net5app
 {
-    class OutputProcessorXML
+    internal class OutputProcessorXml : IOutputProcessor
     {
+        private readonly string path;
+
+        internal OutputProcessorXml(string path)
+        {
+            this.path = path;
+        }
+
+        public void Process(DataStruct data)
+        {
+            XmlSerializer ser = new XmlSerializer(typeof(DataStruct));
+            using StreamWriter sw = new StreamWriter(path, false, new UTF8Encoding(false));
+            ser.Serialize(sw.BaseStream, data);
+        }
     }
 }

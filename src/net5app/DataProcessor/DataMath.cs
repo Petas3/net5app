@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace net5app.DataProcessor
+namespace net5app
 {
-    class DataMath
+    internal class DataMath
     {
     }
 }

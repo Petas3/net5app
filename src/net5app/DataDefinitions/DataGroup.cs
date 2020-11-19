@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
+using System.Runtime.Serialization;
 
-namespace net5app.DataDefinitions
+namespace net5app
 {
-    class DataGroup
+    [DataContract]
+    public class DataGroup
     {
+        [DataMember]
+        public string Label;
+        [DataMember]
+        public Collection<DataRecord> Records;
+        [DataMember]
+        public Collection<DataRecord> InvalidRecords;
     }
 }

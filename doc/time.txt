@@ -3,9 +3,9 @@ Time estimate
 
 30m	Initial analysis
 15m	Public git setup
-	Base structure design
-	Input interface and implementation
-	Output interface and implementations
+55m	Base structure design
+20m	Input interface and implementation
+30m	Output interface and implementations
 	Strucutres extensions
 	Modus computation
 	Median computation
@@ -13,3 +13,4 @@ Time estimate
 10m	Proposals
 10m	Timesheets
 	
+Total 
