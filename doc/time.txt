@@ -1,0 +1,15 @@
+Time estimate
+(at peak efficiency)
+
+30m	Initial analysis
+15m	Public git setup
+	Base structure design
+	Input interface and implementation
+	Output interface and implementations
+	Strucutres extensions
+	Modus computation
+	Median computation
+15m	Math compute validation on 1 group
+10m	Proposals
+10m	Timesheets
+	

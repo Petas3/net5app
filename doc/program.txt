@@ -7,7 +7,7 @@ For each student, the application must count average using the following weights
 For each subject, the application must count simple average, median and modus for all data records and also separately for each group.
 Resolve corrupted records and write report about them into XML/JSON file.
 
-Results must be writable into file in XML or JSON format (command line option â€“ XML is default). Develop your own suitable XML/JSON structure.
+Results must be writable into file in XML or JSON format (command line option - XML is default). Develop your own suitable XML/JSON structure.
 Code must be written in C# (Microsoft C# Coding Conventions) and compilable under .NET Core 3.1, preferably .NET 5.
 
 In design, take into consideration extensibility (perhaps more subjects, bigger amount of data) and how would you expect your program to be further used/ran by others.
@@ -15,3 +15,26 @@ In design, take into consideration extensibility (perhaps more subjects, bigger 
 Deliver the whole developed project in git repository (git archive --format zip --output /full/path/to/zipfile.zip master) or packed zip file (git is preferred option).
 
 Please also include time spent on solving this task in your response.
+
+
+
+Short notes
+
+General
+"rating" is an integer ranging from 0 to 100 - represent as unsigned
+"subjects" are Math, Physics, English
+"score" is Math 40%, Physics 35%, English 25% - treat is "as a subject", use rounding
+
+Objectives
+1.Compute score
+2.Simple average, median and modus for all in GROUP and ALL
+
+Dev points
+1.Load data line by line to prevent memory usage
+2.Compute groups on different threads
+3.Median has special alg.
+4.Modus is simple array binning, can have multiple if counts==, not avaiable if occurences==1 only
+5.Consider error data cases, wrong order of fields (ok), missing fields (fail), group labels, empty groups, data header
+6.Average aggregation
+7.Modus aggregation
+8.Median aggregation - must compute again, use median of medians as pivot

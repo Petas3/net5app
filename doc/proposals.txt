@@ -1,0 +1,5 @@
+Proposals
+
+Application can be further extended to enable more input/output data formats or DB connectors.
+As the app is written in .NET Core it can be deployed as web based app easily. Docker deployment for scaling.
+Charting and GUI can be created easily as .NET contains necessary charting components.

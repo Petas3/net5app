@@ -7,4 +7,10 @@
     <Copyright></Copyright>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="examination.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
