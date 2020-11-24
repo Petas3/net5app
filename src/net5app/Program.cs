@@ -88,6 +88,19 @@ namespace net5app
         private static void ProcessFile(IInputProcessor iP, IOutputProcessor oP)
         {
             DataStruct data = iP.Process();
+
+            //Init engine
+            DataEngine dEngine = new DataEngine(data);
+
+            //Add metrics
+            dEngine.AddMetric(new WeighAverageMetric(data.Subjects));
+
+            //Process groups
+            dEngine.ProcessGroups();
+
+            //Process final
+            dEngine.ProcessAggregate();
+
             oP.Process(data);
         }
     }
