@@ -1,16 +1,20 @@
 Time estimate
-(at peak efficiency)
 
-30m	Initial analysis
-15m	Public git setup
-55m	Base structure design
-20m	Input interface and implementation
-30m	Output interface and implementations
-	Strucutres extensions
-	Modus computation
-	Median computation
-15m	Math compute validation on 1 group
-10m	Proposals
-10m	Timesheets
+0h 45m	Initial analysis
+0h 15m	Public git setup
+1h 05m	Base structure design
+1h 00m	Input interface and implementation
+0h 35m	Output interface and implementations
+0h 50m	Strucutres extensions
+0h 15m	Averages computation
+0h 15m	Modus computation
+0h 40m	Median computation
+0h 45m	Process engine
+0h 30m	Dictionary serialization (nicer format and XML)
+0h 15m	Serialization markup
+0h 50m	Debugging
+0h 30m	Math compute validation on 1 group
+0h 15m	Proposals
+0h 15m	Timesheets
 	
-Total 
+Total 9h.
